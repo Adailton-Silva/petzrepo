@@ -9,7 +9,7 @@ create table cliente (
  primary key (id));
  
  create table pet (
- id bigint not null,
+ id bigint not null auto_increment,
  nome_pet varchar(50) null,
  idade int null,
  id_cliente bigint not null,

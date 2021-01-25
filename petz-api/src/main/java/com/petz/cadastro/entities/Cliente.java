@@ -24,6 +24,6 @@ public class Cliente {
 	private String cidade;
 	private String telefone;
 	private String cpf;
-	
+		
 
 }

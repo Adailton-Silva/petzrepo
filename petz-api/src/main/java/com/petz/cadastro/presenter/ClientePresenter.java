@@ -2,7 +2,6 @@ package com.petz.cadastro.presenter;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,16 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.petz.cadastro.entities.Cliente;
 import com.petz.cadastro.repository.ClienteRepository;
-import com.petz.cadastro.repository.PetRepository;
 
 @RestController
 @RequestMapping({"/clientes"})
 public class ClientePresenter {
 	
 	private ClienteRepository repository;
-	
-	@Autowired
-	private PetRepository petRepository;
 	
 	ClientePresenter(ClienteRepository clienteRepository) {
 		this.repository = clienteRepository;
